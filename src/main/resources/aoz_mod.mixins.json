@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "de.kpaw.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "GameRendererMixin",
+    "MouseMixin"
+  ]
+}

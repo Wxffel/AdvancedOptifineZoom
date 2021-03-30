@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "aoz_mod",
+  "version": "1.0.0",
+
+  "name": "AdvancedOptifineZoom",
+  "description": "Zoom as with Optifine, but with the ability to zoom even further per mouse scrolling!",
+  "authors": [{
+    "name": "Wxffel",
+    "aoz_discord": "Waffel#1639"
+  }],
+
+  "contact": {
+    "sources": "https://github.com/Wxffel/ZoomMod"
+  },
+
+  "license": "CC0-1.0",
+
+  "environment": "client",
+
+  "entrypoints": {
+    "client": ["de.kpaw.main.AdvancedOptifineZoomKt::init"]
+  },
+
+  "mixins": ["aoz_mod.mixins.json"],
+
+  "depends": {
+    "minecraft": "1.16.5",
+    "fabricloader": ">=0.4.0",
+    "fabric": "*",
+    "fabric-language-kotlin": "*"
+  }
+}
