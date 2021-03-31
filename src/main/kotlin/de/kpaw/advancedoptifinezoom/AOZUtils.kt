@@ -1,7 +1,6 @@
 package de.kpaw.advancedoptifinezoom
 
 object AOZUtils {
-
     fun updateZoom(eventDeltaWheel: Double) {
         val currentZoom = DataHolder.currentZoom
         val result = currentZoom / 4
@@ -17,5 +16,4 @@ object AOZUtils {
     }
 
     fun resetZoom() { DataHolder.currentZoom = DataHolder.DEFAULT_ZOOM_VALUE }
-
 }
