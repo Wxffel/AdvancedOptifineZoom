@@ -1,6 +1,6 @@
 package de.kpaw
 
-object ZoomUtils {
+object AOZUtils {
 
     fun updateZoom(eventDeltaWheel: Double) {
         val currentZoom = DataHolder.currentZoom

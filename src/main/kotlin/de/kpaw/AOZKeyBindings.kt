@@ -5,7 +5,7 @@ import net.minecraft.client.options.KeyBinding
 import net.minecraft.client.util.InputUtil
 import org.lwjgl.glfw.GLFW
 
-object ZoomModKeyBindings {
+object AOZKeyBindings {
 
     private const val KEY_ZOOM_MOD = "key.aoz_mod."
 

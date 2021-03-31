@@ -1,8 +1,8 @@
 package de.kpaw.mixin;
 
 import de.kpaw.DataHolder;
-import de.kpaw.ZoomUtils;
-import de.kpaw.ZoomModKeyBindings;
+import de.kpaw.AOZUtils;
+import de.kpaw.AOZKeyBindings;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.Camera;
 import net.minecraft.client.render.GameRenderer;
@@ -26,7 +26,7 @@ public abstract class GameRendererMixin {
             cancellable = true
     )
     private void getZoomFOV(Camera camera, float tickDelta, boolean changingFov, CallbackInfoReturnable<Double> infoReturnable) {
-        if (ZoomModKeyBindings.INSTANCE.getZoomKeyBinding().isPressed()) {
+        if (AOZKeyBindings.INSTANCE.getZoomKeyBinding().isPressed()) {
             if (firstIteration) {
                 firstIteration = false;
                 DataHolder.INSTANCE.setPlayerZooming(true);
@@ -37,7 +37,7 @@ public abstract class GameRendererMixin {
         } else if (DataHolder.INSTANCE.isPlayerZooming()) {
             firstIteration = true;
             DataHolder.INSTANCE.setPlayerZooming(false);
-            ZoomUtils.INSTANCE.resetZoom();
+            AOZUtils.INSTANCE.resetZoom();
             this.client.options.smoothCameraEnabled = DataHolder.INSTANCE.getSmoothCameraWasEnabled();
             this.client.worldRenderer.scheduleTerrainUpdate();
         }

@@ -1,7 +1,7 @@
 package de.kpaw.mixin;
 
 import de.kpaw.DataHolder;
-import de.kpaw.ZoomUtils;
+import de.kpaw.AOZUtils;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.Mouse;
 import org.spongepowered.asm.mixin.Mixin;
@@ -26,7 +26,7 @@ public abstract class MouseMixin {
     )
     private void changeZoomOnMouseScroll(CallbackInfo info) {
         if (DataHolder.INSTANCE.isPlayerZooming()) {
-            ZoomUtils.INSTANCE.updateZoom(this.eventDeltaWheel);
+            AOZUtils.INSTANCE.updateZoom(this.eventDeltaWheel);
 
             if (DataHolder.INSTANCE.getCurrentZoom() != DataHolder.DEFAULT_ZOOM_VALUE)
                 info.cancel();
@@ -44,7 +44,7 @@ public abstract class MouseMixin {
     )
     private void resetZoomOnScrollWheelClick(long window, int button, int action, int mods, CallbackInfo info) {
         if (button == 2 && action == 1 && DataHolder.INSTANCE.isPlayerZooming()) {
-            ZoomUtils.INSTANCE.resetZoom();
+            AOZUtils.INSTANCE.resetZoom();
             this.client.worldRenderer.scheduleTerrainUpdate();
             info.cancel();
         }
