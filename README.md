@@ -2,8 +2,8 @@
  
 AdvancedOptifineZoom is a mod which provides a zoom as Optifine does, but contains the feature to zoom even further with the use of a scroll wheel.
 
-**This is a mini project to learn modding!
-**I am aware that there are mods that provide the same features as this one!
+**This is a mini project to learn modding!**
+**I am aware that there are mods that provide the same features as this one!**
 
 # Download
 
