@@ -1,8 +1,8 @@
-package de.kpaw.mixin;
+package de.kpaw.advancedoptifinezoom.mixin;
 
-import de.kpaw.DataHolder;
-import de.kpaw.AOZUtils;
-import de.kpaw.AOZKeyBindings;
+import de.kpaw.advancedoptifinezoom.DataHolder;
+import de.kpaw.advancedoptifinezoom.AOZUtils;
+import de.kpaw.advancedoptifinezoom.AOZKeyBindings;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.Camera;
 import net.minecraft.client.render.GameRenderer;

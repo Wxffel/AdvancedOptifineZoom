@@ -19,7 +19,7 @@
   "environment": "client",
 
   "entrypoints": {
-    "client": ["de.kpaw.main.AdvancedOptifineZoomKt::init"]
+    "client": ["de.kpaw.advancedoptifinezoom.AdvancedOptifineZoomKt::init"]
   },
 
   "mixins": ["aoz_mod.mixins.json"],

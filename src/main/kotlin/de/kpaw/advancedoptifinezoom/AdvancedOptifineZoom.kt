@@ -1,6 +1,5 @@
-package de.kpaw.main
+package de.kpaw.advancedoptifinezoom
 
-import de.kpaw.AOZKeyBindings
 import net.fabricmc.api.EnvType
 import net.fabricmc.api.Environment
 

@@ -1,4 +1,4 @@
-package de.kpaw
+package de.kpaw.advancedoptifinezoom
 
 object DataHolder {
     const val DEFAULT_ZOOM_VALUE = 20.0

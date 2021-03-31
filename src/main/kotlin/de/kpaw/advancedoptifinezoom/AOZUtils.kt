@@ -1,4 +1,4 @@
-package de.kpaw
+package de.kpaw.advancedoptifinezoom
 
 object AOZUtils {
 

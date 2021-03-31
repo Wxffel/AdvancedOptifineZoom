@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "de.kpaw.mixin",
+  "package": "de.kpaw.advancedoptifinezoom.mixin",
   "compatibilityLevel": "JAVA_8",
   "client": [
     "GameRendererMixin",
