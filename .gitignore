@@ -1,17 +1,9 @@
-# gradle
-
+# Gradle
 .gradle/
 build/
-out/
 
-# idea
-
+# Editors
 .idea/
-*.iml
-*.ipr
-*.iws
 
-# fabric
-
+# Fabric
 run/
-minecraft/
