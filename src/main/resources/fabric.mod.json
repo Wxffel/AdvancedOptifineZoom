@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "aoz_mod",
-  "version": "1.0.0",
+  "version": "${version}",
 
   "name": "AdvancedOptifineZoom",
   "description": "Zoom as with Optifine, but with the ability to zoom even further per mouse scrolling!",
