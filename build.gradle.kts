@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 val minecraftVersion = "1.16.5"
 val yarnMappingsVersion = "1.16.5+build.6:v2"
 val fabricLoaderVersion = "0.11.3"
