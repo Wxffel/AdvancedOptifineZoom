@@ -37,8 +37,8 @@ public abstract class MouseMixin {
             method = "onMouseButton(JIII)V",
             at = @At(
                     value = "INVOKE",
-                    target = "net/minecraft/client/options/KeyBinding.setKeyPressed(Lnet/minecraft/client/util/InputUtil$Key;Z)V",
-                    shift = At.Shift.AFTER
+                    target = "Lnet/minecraft/client/option/KeyBinding;setKeyPressed(Lnet/minecraft/client/util/InputUtil$Key;Z)V",
+                    shift = At.Shift.BEFORE
             ),
             cancellable = true
     )
