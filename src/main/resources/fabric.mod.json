@@ -23,8 +23,8 @@
   "mixins": ["aoz_mod.mixins.json"],
 
   "depends": {
-    "minecraft": ">=1.16.2",
-    "fabricloader": ">=0.4.0",
+    "minecraft": ">=1.18.2",
+    "fabricloader": ">=0.13.3",
     "fabric": "*",
     "fabric-language-kotlin": "*"
   }
