@@ -1,15 +1,9 @@
-val minecraftVersion = "1.18.2"
-val yarnMappingsVersion = "1.18.2+build.3"
-val fabricLoaderVersion = "0.13.3"
-val fabricApiVersion = "0.50.0+1.18.2"
-val fabricLanguageKotlinVersion = "1.7.3+kotlin.1.6.20"
-
 group = "de.kpaw"
 version = "1.0.0"
 
 plugins {
-    kotlin("jvm") version "1.6.20"
-    id("fabric-loom") version "0.12-SNAPSHOT"
+    kotlin("jvm") version "1.8.10"
+    id("fabric-loom") version "1.1-SNAPSHOT"
 }
 
 repositories {
@@ -17,11 +11,11 @@ repositories {
 }
 
 dependencies {
-    minecraft("com.mojang:minecraft:$minecraftVersion")
-    mappings("net.fabricmc:yarn:$yarnMappingsVersion")
-    modImplementation("net.fabricmc:fabric-loader:$fabricLoaderVersion")
-    modImplementation("net.fabricmc:fabric-language-kotlin:$fabricLanguageKotlinVersion")
-    modImplementation(fabricApi.module("fabric-key-binding-api-v1", fabricApiVersion))
+    minecraft("com.mojang:minecraft:1.19.3")
+    mappings("net.fabricmc:yarn:1.19.3+build.5")
+    modImplementation("net.fabricmc:fabric-loader:0.14.17")
+    modImplementation(fabricApi.module("fabric-key-binding-api-v1", "0.75.1+1.19.3"))
+    modImplementation("net.fabricmc:fabric-language-kotlin:1.9.1+kotlin.1.8.10")
 }
 
 tasks {

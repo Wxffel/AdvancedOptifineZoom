@@ -2,7 +2,7 @@ rootProject.name = "AdvancedOptifineZoom"
 
 pluginManagement {
     repositories {
-        maven("https://maven.fabricmc.net/")
         gradlePluginPortal()
+        maven("https://maven.fabricmc.net/")
     }
 }
